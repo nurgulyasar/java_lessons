@@ -8,8 +8,9 @@ public class question2_TheAreaOfRectangle {
 	    
 		double height = 7.9;
 
-
-	        System.out.printf("area = " + width + " * " + height);
+		double area = width*height;
+		
+	        System.out.println("area = " + area);
 	 
 
 	}
