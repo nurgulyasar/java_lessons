@@ -16,27 +16,21 @@ public class Question12 {
 		//9 18 27 36 45 54 63 72 81 90
 		//10 20 30 40 50 60 70 80 90 100
 
-	    String Boundary1 = JOptionPane.showInputDialog(null, "Please enter the first boundary of the multiplication table.");
-        String Boundary2 = JOptionPane.showInputDialog(null, "Please enter the second boundary of the multiplication table.");
-
-        int X = Integer.parseInt(Boundary1);
-        int Y = Integer.parseInt(Boundary2);
-        int j = 1;
-        String Result = "";
-        int x = 1;
-
-        while (x <= X) {
-            for (int i = 1; i <= Y; i++) {
-                j = i * x;
-                Result = Result + j + "\t";
-            }
-            x++;
-            Result = Result + "\n";
-        }
-        JTextArea jt=new JTextArea(Result);
-        jt.setEditable(false);
-        jt.setOpaque(false);
-        jt.setTabSize(3);
-        JOptionPane.showMessageDialog(null, jt);
-    }
-}
+		for row in range(0, 10):
+		    for col in range(0, 10):
+		        num = row * col
+		        if num < 10:
+		            empty = "  "
+		        else:
+		            if num < 100: 
+		                empty  = " " 
+		        if col == 0:
+		            if row == 0:
+		                print("    ", end = '')
+		            else:
+		                print("  ", row, end='')
+		        elif row == 0:
+		            print("  ", col, end='')
+		        else:
+		            print(empty, num, end = '')
+		    print()
