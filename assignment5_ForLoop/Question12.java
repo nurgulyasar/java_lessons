@@ -16,21 +16,14 @@ public class Question12 {
 		//9 18 27 36 45 54 63 72 81 90
 		//10 20 30 40 50 60 70 80 90 100
 
-		for row in range(0, 10):
-		    for col in range(0, 10):
-		        num = row * col
-		        if num < 10:
-		            empty = "  "
-		        else:
-		            if num < 100: 
-		                empty  = " " 
-		        if col == 0:
-		            if row == 0:
-		                print("    ", end = '')
-		            else:
-		                print("  ", row, end='')
-		        elif row == 0:
-		            print("  ", col, end='')
-		        else:
-		            print(empty, num, end = '')
-		    print()
+		for (int row = 1; row <= 10; row++) {
+			
+			 for (int column = 1; column <= 10; column++) {
+				 
+			 System.out.print(column * row + " "); 
+			 
+			 }
+			 System.out.println(); 	 
+		}
+	}
+}

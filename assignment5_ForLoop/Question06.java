@@ -25,6 +25,8 @@ public class Question06 {
 			 firstTerm = secondTerm;
 			   
 			 secondTerm = nextTerm;
+		
+			 input.close();
 		}
 			  
 	}

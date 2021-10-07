@@ -26,7 +26,8 @@ public class Question04 {
 
 			System.out.println("The result of product="+product);
 
-			}
+			input.close();	
+		}
 	
 	
 	}
