@@ -13,19 +13,22 @@ public class Question09 {
 
 	//You should use while loop and if-else statements. Note that, there should not be any comma after the last digit.
 			
-		Scanner end = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter end number:");
 		
-		int num;
+		int endnumber = input.nextInt();
 		
-		for (int i = 1; i < num; i++) {
-	
-			if (i % 2 != 0) {
-				
-				System.out.print(i+", ");
+		int i=0;
+		
+		while (i<=endnumber) {
 			
-			}
+			if (i==1) System.out.print(1);
+			else if (i%2==1) System.out.print(", "+i);
+			i++;
+		
 		}
+		
+		input.close();
     }
 }
